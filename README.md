@@ -9,8 +9,8 @@ A small script that transforms Emby/Jellyfin NFO files into plexmatch.
 
 ### tvshow
 
-python nfoToPlexMatcher.py --show "your/path"
+`python nfoToPlexMatcher.py --show "your/path"`
 
 ### movie
 
-python nfoToPlexMatcher.py --movie "your/path"
+`python nfoToPlexMatcher.py --movie "your/path"`
