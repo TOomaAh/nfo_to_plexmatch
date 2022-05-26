@@ -19,7 +19,7 @@ A small script that transforms Emby/Jellyfin NFO files into plexmatch.
 ```
 -h, --help:
     Print this help message
--s, --show: #required
+-s, --show: #required (default)
     Convert nfo for shows
 -m, --movie: #required
     Convert nfo for movies

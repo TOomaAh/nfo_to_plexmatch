@@ -86,8 +86,12 @@ if __name__ == "__main__":
         if (i == "--override" or i == "-o"):
             override = True
 
+    if ("--movie" in sys.argv or "-m" in sys.argv) and ("--show" in sys.argv or "-s" in sys.argv):
+        print("You can only use one of the following options: --movie, --show")
+        help()
+        exit(1)
 
     if is_movie:
-        walk_dir(Movie(), sys.argv[len(sys.argv) - 1], override)
+        walk_dir(Movie(), path, override)
     else:
-        walk_dir(Show(), sys.argv[len(sys.argv) - 1], override)
+        walk_dir(Show(), path, override)
