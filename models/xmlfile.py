@@ -1,6 +1,6 @@
 from xml.etree.ElementTree import Element, ElementTree
 import xml.etree.ElementTree as ET
-from type.plexmatch import PlexMatch
+from models.plexmatch import PlexMatch
 
 
 class XMLFile:

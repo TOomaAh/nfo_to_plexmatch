@@ -1,12 +1,12 @@
 import os
 import sys
 from tqdm import tqdm
-from type.file import File
-from type.movie import Movie
-from type.plexmatch import PlexMatch
-from type.show import Show
-from type.xmlfile import XMLFile
-from type.media import Media
+from models.file import File
+from models.movie import Movie
+from models.plexmatch import PlexMatch
+from models.show import Show
+from models.xmlfile import XMLFile
+from models.media import Media
 
 
 def walk_dir(media: Media, path: str, override: bool = False) -> None:
