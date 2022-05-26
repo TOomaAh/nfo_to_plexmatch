@@ -1,4 +1,4 @@
-from media import Media
+from type.media import Media
 
 
 class Show(Media):

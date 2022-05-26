@@ -1,12 +1,12 @@
-from msilib.schema import Media
 import os
 import sys
 from tqdm import tqdm
-from file import File
-from movie import Movie
-from plexmatch import PlexMatch
-from show import Show
-from xmlfile import XMLFile
+from type.file import File
+from type.movie import Movie
+from type.plexmatch import PlexMatch
+from type.show import Show
+from type.xmlfile import XMLFile
+from type.media import Media
 
 
 def walk_dir(media: Media, path: str, override: bool = False) -> None:
