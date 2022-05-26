@@ -16,7 +16,7 @@ A small script that transforms Emby/Jellyfin NFO files into plexmatch.
 `python nfoToPlexMatcher.py --movie "your/path"`
 
 ## options
-
+```
 -h, --help:
     Print this help message
 -s, --show: #required
@@ -25,3 +25,4 @@ A small script that transforms Emby/Jellyfin NFO files into plexmatch.
     Convert nfo for movies
 -o, --override: #optional (default: False)
     Override existing .plexmatch files
+```
