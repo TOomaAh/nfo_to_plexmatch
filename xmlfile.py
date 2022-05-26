@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 from plexmatch import PlexMatch
 
 
-class XML:
+class XMLFile:
 
     def __init__(self, filename):
         self.filename = filename
@@ -11,8 +11,12 @@ class XML:
         tree = None
 
 
-    def parse(self) -> ElementTree:
-        self.tree = ET.parse(self.filename)
+    def parse(self) -> bool:
+        try:
+            self.tree = ET.parse(self.filename)
+            return True
+        except Exception:
+            return False
 
     def get_root(self):
         self.root = self.tree.getroot()
@@ -27,7 +31,7 @@ class XML:
         return self.root.find("tmdbid")
     
     def get_imdbid(self):
-        return self.root.find("imdb_id")
+        return self.root.find("imdbid")
     
     def get_tvdbid(self):
         return self.root.find("id")
